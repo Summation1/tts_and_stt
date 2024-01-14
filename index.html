@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Voice Note and Text To Speech App</title>
+    <meta name="description" content="A Voice Note App with Text To Speech functionality.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/cerulean/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0Mou2qXGeXK7k/Ue/a1hspEVcEP2zCpoQZw8/MPeUgISww+VmDJcy2ri9tX0a6iy" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid align-center">
+        <div class="wrapper">
+            <header>Text To Speech</header>
+            <form action="#">
+                <div class="row">
+                    <label>Enter Text</label>
+                    <textarea id="speech-textarea"></textarea>
+                </div>
+                <div class="row">
+                    <label>Select Voice</label>
+                    <div class="outer">
+                        <select id="voice-list"></select>
+                    </div>
+                </div>
+                <button id="convert-speech-btn">Convert To Speech</button>
+            </form>
+        </div>
+
+        <div class="app">
+            <div class="row">
+                <div class="col-md-6 align-center">
+                    <h3>Add New Voice Note</h3>
+                    <div class="input-single">
+                        <textarea id="note-textarea"
+                            placeholder="Create a new note by typing or using voice recognition." rows="6"></textarea>
+                    </div>
+                    <button id="start-record-btn" class="btn-success" title="Start Recording">Start Recognition</button>
+                    <button id="pause-record-btn" class="btn-warning" title="Pause Recording">Pause Recognition</button>
+                    <button id="save-note-btn" class="btn-info" title="Save Note">Save Note</button>
+                    <p id="recording-instructions">Press the
+                        <strong>Start Recognition</strong> button and allow access.
+                    </p>
+                </div>
+                <div class="col-md-6 align-center">
+                    <h3>My Voice Notes</h3>
+                    <ul id="notes">
+                        <li>
+                            <p class="no-notes">You don't have any notes.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

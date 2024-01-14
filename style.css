@@ -1,0 +1,165 @@
+
+body, figure, h1, h2, h3, p, dl, dt, dd, ul, ol, li, textarea, fieldset, pre, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right bottom, #EDE7F6, #B3E0F2, #81D4FA); 
+  font-family: 'Poppins', sans-serif;
+  color: #333; 
+}
+
+::selection {
+  color: #fff;
+  background: #7986cb; 
+}
+
+
+.container-fluid {
+  background: rgba(255, 255, 255, 0.95); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%;
+  max-width: 1200px; 
+  margin: 20px auto;
+}
+
+.app {
+  padding: 20px;
+  background: linear-gradient(to right bottom, #FFD180, #FF902E); 
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+
+#note-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #D1C4E9;
+  border-radius: 12px;
+  resize: vertical;
+  background-color: #fff; 
+  color: #333; 
+}
+
+.btn-success, .btn-warning, .btn-info {
+  margin-right: 10px;
+}
+
+#recording-instructions {
+  margin-top: 10px;
+  color: #555;
+}
+
+#notes {
+  list-style: none;
+}
+
+.note {
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note a {
+  margin-right: 10px;
+}
+
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(to right bottom, #64b5f6, #1565c0); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  color: #fff;
+}
+
+header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #D1C4E9;
+  border-radius: 12px;
+  resize: vertical;
+  margin-bottom: 15px;
+  background-color: #fff; 
+  color: #333;
+}
+
+.outer {
+  display: flex;
+}
+
+select {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #D1C4E9;
+  border-radius: 12px;
+  margin-right: 15px;
+  background-color: #fff; 
+  color: #333; 
+  margin-bottom: 15px; 
+}
+
+button {
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+  background-color: #e67d2d;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #FF8F00; 
+}
+
+
+@media (max-width: 768px) {
+  .container-fluid {
+      width: 90%;
+  }
+
+  .app,
+  .wrapper {
+      padding: 15px;
+  }
+
+  #start-record-btn,
+  #pause-record-btn,
+  #save-note-btn,
+  #convert-speech-btn {
+      margin-top: 15px;
+  }
+}
+
+
+.no-browser-support,
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
